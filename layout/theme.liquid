@@ -209,6 +209,7 @@
     </script>
   
   {% render 'shogun-head' %}
+  <link rel="stylesheet" href="{{ 'styles.min.css' | asset_url }}" media="screen" onload="this.media='all'">
 </head>
 
   <body class="gradient">
@@ -261,5 +262,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="{{ 'script.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>
