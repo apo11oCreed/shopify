@@ -215,8 +215,8 @@ This file can be re-written at any time.
     }
     </script>
   
-
   {% render 'shogun-head' %}
+
 </head>
 
 
@@ -225,7 +225,8 @@ This file can be re-written at any time.
   
   
   {{ content_for_layout }}
-  
+  {{ 'https://code.jquery.com/jquery-3.6.0.min.js' | script_tag }}
+{{ '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' | script_tag }}
   <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
