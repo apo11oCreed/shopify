@@ -1,0 +1,16 @@
+* {
+  font-size: 10px;
+}
+
+* {
+  color: blue;
+}
+
+body:first-of-type {
+  border: green solid 30px;
+}
+body:first-of-type p {
+  border: red solid 3px;
+}
+
+/*# sourceMappingURL=styles.min.css.map */
