@@ -1,0 +1,31 @@
+{
+  "name": "shopify",
+  "version": "1.0.0",
+  "description": "Compilers for Shopify theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uglifyjs": "uglifyjs src/js/script.js --compress --mangle --source-map -o assets/script.min.js",
+    "sass": "sass src/css/styles.scss assets/styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apo11oCreed/shopify.git"
+  },
+  "author": "Nelson Correia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apo11oCreed/shopify/issues"
+  },
+  "homepage": "https://github.com/apo11oCreed/shopify#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "uglify-js": "^3.15.3",
+    "watch": "^0.13.0"
+  }
+}
