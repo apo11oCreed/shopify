@@ -216,6 +216,7 @@ This file can be re-written at any time.
     </script>
   
   {% render 'shogun-head' %}
+  <link rel="stylesheet" href="{{ 'styles.min.css' | asset_url }}" media="screen" onload="this.media='all'">
 
 </head>
 
@@ -255,6 +256,7 @@ This file can be re-written at any time.
       }
     </script>
 <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'script.min.js' | asset_url }}" defer="defer"></script>
   <style type="text/css">
     body, html {
       width: 100% !important;
